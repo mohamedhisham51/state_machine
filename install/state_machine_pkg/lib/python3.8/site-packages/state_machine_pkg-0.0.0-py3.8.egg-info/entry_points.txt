@@ -1,0 +1,3 @@
+[console_scripts]
+state_machine_node = state_machine_pkg.state_machine_node:main
+

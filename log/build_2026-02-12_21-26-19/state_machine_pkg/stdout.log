@@ -1,0 +1,37 @@
+running egg_info
+creating ../build/state_machine_pkg/state_machine_pkg.egg-info
+writing ../build/state_machine_pkg/state_machine_pkg.egg-info/PKG-INFO
+writing dependency_links to ../build/state_machine_pkg/state_machine_pkg.egg-info/dependency_links.txt
+writing entry points to ../build/state_machine_pkg/state_machine_pkg.egg-info/entry_points.txt
+writing requirements to ../build/state_machine_pkg/state_machine_pkg.egg-info/requires.txt
+writing top-level names to ../build/state_machine_pkg/state_machine_pkg.egg-info/top_level.txt
+writing manifest file '../build/state_machine_pkg/state_machine_pkg.egg-info/SOURCES.txt'
+reading manifest file '../build/state_machine_pkg/state_machine_pkg.egg-info/SOURCES.txt'
+writing manifest file '../build/state_machine_pkg/state_machine_pkg.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build
+creating /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build/lib
+creating /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build/lib/state_machine_pkg
+copying state_machine_pkg/gap_corner_detector.py -> /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build/lib/state_machine_pkg
+copying state_machine_pkg/state_machine_node.py -> /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build/lib/state_machine_pkg
+copying state_machine_pkg/__init__.py -> /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build/lib/state_machine_pkg
+running install
+running install_lib
+creating /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg
+copying /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build/lib/state_machine_pkg/gap_corner_detector.py -> /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg
+copying /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build/lib/state_machine_pkg/state_machine_node.py -> /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg
+copying /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build/lib/state_machine_pkg/__init__.py -> /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg
+byte-compiling /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg/gap_corner_detector.py to gap_corner_detector.cpython-38.pyc
+byte-compiling /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg/state_machine_node.py to state_machine_node.cpython-38.pyc
+byte-compiling /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/share/ament_index
+creating /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/share/ament_index/resource_index
+creating /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/share/ament_index/resource_index/packages
+copying resource/state_machine_pkg -> /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/share/ament_index/resource_index/packages
+copying package.xml -> /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/share/state_machine_pkg
+running install_egg_info
+Copying ../build/state_machine_pkg/state_machine_pkg.egg-info to /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg-0.0.0-py3.8.egg-info
+running install_scripts
+writing list of installed files to '/sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/install.log'
