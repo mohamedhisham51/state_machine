@@ -18,7 +18,7 @@ class StateMachineNode(Node):
         self.detector = GapCornerDetector()
 
         # -----------------------------
-        # State
+        # Intial State
         # -----------------------------
         self.state = "GAP_FOLLOW"
 
@@ -48,17 +48,47 @@ class StateMachineNode(Node):
         # Preprocess once
         proc_ranges, center_index = self.detector.preprocess_lidar(msg.ranges)
 
-        result = self.detector.analyze(msg.ranges)
+        #result = self.detector.analyze(msg.ranges)
 
-        self.update_state(result)
+        #self.update_state(result)
 
-        steering, speed = self.compute_control(
-            result,
-            center_index
-        )
+        self.state = self.classify_environment(proc_ranges, center_index)
+        self.get_logger().info(f"current STATE: {self.state}")
+
+        steering, speed = self.compute_control()
 
         self.publish_drive(steering, speed)
 
+
+    def classify_environment(self, proc_ranges, center_index):
+        """
+        Returns one of:
+        "STOP", "WALL_FOLLOW", "FOLLOW_GAP"
+        """
+
+        front_window = 20
+        side_window = 80
+
+        front = proc_ranges[center_index - front_window :
+                            center_index + front_window]
+
+        left = proc_ranges[:side_window]
+        right = proc_ranges[-side_window:]
+
+        front_mean = np.mean(front)
+        left_mean = np.mean(left)
+        right_mean = np.mean(right)
+
+        # 🚨 STOP condition
+        if front_mean < 0.5:
+            return "STOP"
+
+        # 🟢 Straight corridor
+        if front_mean > 2.5 and abs(left_mean - right_mean) < 0.3:
+            return "WALL_FOLLOW"
+
+        # 🟡 Corner / obstacle
+        return "FOLLOW_GAP"
 
     # ==================================================
     # State Logic
@@ -68,7 +98,7 @@ class StateMachineNode(Node):
         new_state = self.state  # default = no change
 
         if result["is_cornering"] or result["has_gap"]:
-            new_state = "GAP_FOLLOW"
+            new_state = "FOLLOW_GAP"
         else:
             new_state = "WALL_FOLLOW"
 
@@ -83,16 +113,18 @@ class StateMachineNode(Node):
     # ==================================================
     # Control Logic
     # ==================================================
-    def compute_control(self, result, center_index):
+    def compute_control(self):
 
-        if self.state == "GAP_FOLLOW":
+        if self.state == "FOLLOW_GAP":
 
-            best_idx = result["best_gap_index"]
+            #best_idx = result["best_gap_index"]
 
-            if best_idx is None:
-                return 0.0, 0.0
+            #if best_idx is None:
+            #    return 0.0, 0.0
 
-            angle = (best_idx - center_index) * self.detector.radians_per_elem
+            #angle = (best_idx - center_index) * self.detector.radians_per_elem
+
+            angle = 0.0
 
             speed = 1.0
             return float(angle), speed

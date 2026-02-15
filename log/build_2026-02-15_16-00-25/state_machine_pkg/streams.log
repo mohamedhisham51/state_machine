@@ -1,0 +1,24 @@
+[0.702s] Invoking command in '/sim_ws/src/f1tenth_gym_ros/state_machine/state_machine_pkg': PYTHONPATH=/sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/prefix_override:/sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/state_machine_pkg build --build-base /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build install --record /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/install.log --install-scripts $base/lib/state_machine_pkg --single-version-externally-managed
+[0.867s] running egg_info
+[0.867s] writing ../build/state_machine_pkg/state_machine_pkg.egg-info/PKG-INFO
+[0.868s] writing dependency_links to ../build/state_machine_pkg/state_machine_pkg.egg-info/dependency_links.txt
+[0.868s] writing entry points to ../build/state_machine_pkg/state_machine_pkg.egg-info/entry_points.txt
+[0.868s] writing requirements to ../build/state_machine_pkg/state_machine_pkg.egg-info/requires.txt
+[0.868s] writing top-level names to ../build/state_machine_pkg/state_machine_pkg.egg-info/top_level.txt
+[0.901s] reading manifest file '../build/state_machine_pkg/state_machine_pkg.egg-info/SOURCES.txt'
+[0.903s] writing manifest file '../build/state_machine_pkg/state_machine_pkg.egg-info/SOURCES.txt'
+[0.904s] running build
+[0.904s] running build_py
+[0.904s] copying state_machine_pkg/state_machine_node.py -> /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build/lib/state_machine_pkg
+[0.904s] running install
+[0.904s] running install_lib
+[0.907s] copying /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build/lib/state_machine_pkg/state_machine_node.py -> /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg
+[0.908s] byte-compiling /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg/state_machine_node.py to state_machine_node.cpython-38.pyc
+[0.910s] running install_data
+[0.911s] running install_egg_info
+[0.912s] removing '/sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg-0.0.0-py3.8.egg-info' (and everything under it)
+[0.912s] Copying ../build/state_machine_pkg/state_machine_pkg.egg-info to /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages/state_machine_pkg-0.0.0-py3.8.egg-info
+[0.915s] running install_scripts
+[0.931s] Installing state_machine_node script to /sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/state_machine_pkg
+[0.931s] writing list of installed files to '/sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/install.log'
+[0.970s] Invoked command in '/sim_ws/src/f1tenth_gym_ros/state_machine/state_machine_pkg' returned '0': PYTHONPATH=/sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/prefix_override:/sim_ws/src/f1tenth_gym_ros/state_machine/install/state_machine_pkg/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../build/state_machine_pkg build --build-base /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/build install --record /sim_ws/src/f1tenth_gym_ros/state_machine/build/state_machine_pkg/install.log --install-scripts $base/lib/state_machine_pkg --single-version-externally-managed
